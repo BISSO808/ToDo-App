@@ -1,0 +1,25 @@
+<% include ../views/partials/header %>
+<div class="col-md-6">
+<form method="POST" action="/todo/edit/<%= todo._id%>">
+    <div class="form group">
+            <lable>
+                Todo Name
+            </lable>
+            <input class="form-control" type="text" name="text" placeholder="Add todo"  required>
+        </div>
+        <div>
+            <lable>
+                Todo Body
+            </lable>
+            <textarea class="form-control" type="text" placeholder="Add body" name="body"></textarea>
+        </div>
+        <br>
+    <button type="submit" class="btn btn-success" >
+        submit
+    </button>
+        <a href="/" class="btn btn-danger">cancel</a>
+
+
+</form>
+</div>
+<% include ../views/partials/footer %>
